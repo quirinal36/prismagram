@@ -1,11 +1,23 @@
 {
   "name": "prismagram",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/quirinal36/prismagram.git",
   "author": "leehg <turboguy36@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "graphql-yoga": "^1.18.3"
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-core": "^6.26.3",
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
   }
 }
